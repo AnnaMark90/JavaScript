@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add_cont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+    padding: 15px 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.title_cont{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.pop_up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.active{
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.pop_up_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_body{
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+
+.form_title{
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: #222620;
+    margin-bottom: 40px;
+}
+
+.pop_body input{
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #89909F;
+}
+
+.pop_body input:focus{
+    outline: none;
+}
+
+.pop_body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.pop_up_close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+}
+
+.btns button{
+    border: 1px solid rgba(158, 67, 243, 0.8);
+    background-color: #ae6fe8;
+    width: 55px;
+    height: 70px;
+    color: antiquewhite;
+}
+
+.contacts{
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    background-color: #9c59db;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    border: 2px solid #4f0a8e;
+}
+
+.contact{
+    margin: 6%;
+    border: 3px solid #ae6fe8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+}
