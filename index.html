@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title_cont">Контакты</h1>
+    <form>
+        <button id="open_pop" class="add_cont">Добавить контакт</button>
+    </form>
+
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_body">
+                <form>
+                    <div class="form_title">Форма <br> для добавления контакта</div>
+                    <input type="text" placeholder="Введите id" name="id" id="id">
+                    <input type="text" placeholder="Введите Имя" name="name" id="name">
+                    <input type="email" placeholder="Введите эл. почту" name="email" id="email">
+                    <input type="text" placeholder="Введите адрес" name="address" id="address">
+                    <input type="tel" placeholder="Введите номер телефона" name="phone" id="phone">
+                </form>
+                <div class="pop_up_close" id="close_pop">&#10006</div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="contacts">
+            <div class="contact">
+                <div class="info">
+                    <div class="id_contact">ID:</div>
+                    <h2 class="title_contact">Name:</h2>
+                    <div class="email_contact">Email:</div>
+                    <div class="address_contact">Address:</div>
+                    <div class="phone_contact">Phone:</div>
+                </div>
+                <div class="btns">
+                    <form>
+                        <button class="edit">edit</button>
+                        <button class="remove">remove</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+</body>
+<script src="./script/pop.js"></script>
+<script src="./script/script.js"></script>
+</html>
