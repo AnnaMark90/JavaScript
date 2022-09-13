@@ -227,9 +227,13 @@ class NoteUI extends NoteController{
         await fetch(url).then((response) => {
             if(!response.ok) return;
             return response.json();
-        }).then(() => {
-            data.push(url[i]);
-            this.storage = url;
+        }).then((tData) => {
+            tData.forEach((el)=>{
+                note = {
+                    title: el.name,
+                    content: el.email
+                }
+            });
         });
     };
 
